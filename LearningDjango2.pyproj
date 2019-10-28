@@ -4,6 +4,7 @@
     <Name>LearningDjango2</Name>
     <RootNamespace>LearningDjango2</RootNamespace>
     <InterpreterId>MSBuild|envLearningDjango2|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,13 +45,17 @@
     <Compile Include="MyApp1\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MyApp1\static\site.css" />
+    <Content Include="MyApp1\templates\MyApp1\about.html" />
     <Content Include="MyApp1\templates\MyApp1\index.html" />
+    <Content Include="MyApp1\templates\MyApp1\layout.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LearningDjango2\" />
     <Folder Include="MyApp1\" />
     <Folder Include="MyApp1\migrations\" />
+    <Folder Include="MyApp1\static\" />
     <Folder Include="MyApp1\templates\" />
     <Folder Include="MyApp1\templates\MyApp1\" />
   </ItemGroup>
